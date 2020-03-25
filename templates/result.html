@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required style tags -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/resultStyle.css') }}">
+    <!-- Required script tags -->
+  </head>
+  <body>
+    <section class="container">
+      <div class="item">
+        <br>
+        <h1 class=headings">TOTAL CASES</h1>
+        <img src="{{ url_for('static', filename='images/total-cases-png.png') }}" alt="ERROR: DEATH IMG FAILED TO LOAD" width="150" height="150"> <br>
+        {{ result[1] }} 
+      </div>
+      <div class="item">
+        <br>
+        <h1 class=headings">NEW CASES</h1>
+        <img src="{{ url_for('static', filename='images/new-cases-png.png') }}" alt="ERROR: DEATH IMG FAILED TO LOAD" width="150" height="150"> <br>
+         {{ result[2] }} </div>
+      <div class="item">
+        <br>
+        <h1 class=headings">ACTIVE CASES</h1>
+        <img src="{{ url_for('static', filename='images/active-cases-png.png') }}" alt="ERROR: DEATH IMG FAILED TO LOAD" width="150" height="150"> <br>
+         {{ result[3] }} </div>
+      <div class="item">
+        <br>
+        <h1 class=headings">TOTAL DEATHS</h1>
+        <img src="{{ url_for('static', filename='images/death-icon-png.png') }}" alt="ERROR: DEATH IMG FAILED TO LOAD" width="150" height="150"> <br>
+         {{ result[4] }} </div>
+      <div class="item">
+        <br>
+        <h1 class=headings">NEW DEATHS</h1>
+        <img src="{{ url_for('static', filename='images/new-deaths-png.png') }}" alt="ERROR: DEATH IMG FAILED TO LOAD" width="150" height="150"> <br>
+         {{ result[5] }} </div>
+      <div class="item">
+        <br>
+        <h1 class=headings">TOTAL RECOVERED</h1>
+        <img src="{{ url_for('static', filename='images/recovered-png.png') }}" alt="ERROR: DEATH IMG FAILED TO LOAD" width="150" height="150"> <br>
+         {{ result[6] }} </div>
+      <div class="item">
+        <br>
+        <h1 class=headings">CRITICAL</h1>
+        <img src="{{ url_for('static', filename='images/critical-png.png') }}" alt="ERROR: DEATH IMG FAILED TO LOAD" width="150" height="150"> <br>
+         {{ result[7] }} </div>
+      <div class="item">
+        <br>
+        <h1 class=headings">REGION</h1>
+        <img src="{{ url_for('static', filename='images/region-png.png') }}" alt="ERROR: DEATH IMG FAILED TO LOAD" width="150" height="150"> <br>
+         {{ result[0] }} </div>
+      <div class="item">
+        <br>
+        <h1 class=headings">PEOPLEperM</h1>
+        <img src="{{ url_for('static', filename='images/people-per-million-png.png') }}" alt="ERROR: DEATH IMG FAILED TO LOAD" width="150" height="150"> <br>
+         {{ result[9] }} </div>
+      <div class="item">
+        <br>
+        <h1 class=headings">DATE</h1>
+        <img src="{{ url_for('static', filename='images/record-date-png.png') }}" alt="ERROR: DEATH IMG FAILED TO LOAD" width="150" height="150"> <br>
+         {{ result[10] }} </div>
+      <div class="item">
+        <br>
+        <h1 class=headings">TIME</h1>
+        <img src="{{ url_for('static', filename='images/record-time-png.png') }}" alt="ERROR: DEATH IMG FAILED TO LOAD" width="150" height="150"> <br>
+         {{ result[11] }} </div>
+    </section>
+
+  </body>
+</html>
